@@ -5,14 +5,21 @@ package com.intiRecycle;
  *	初始化操作：
  *	1，变量优先构造器初始化,，与位置无关。
  *	2，静态对象优先实例对象初始化。
- *	
+ *	3，数组初始化见数组定义
  */
 
 public class Intialization {
 	
 	public static void main(String[] args) {
 		Intial i = new Intial();
+		String[] array = new String[] {
+				"aa","bb","cc"
+		};
+		for(String i1 : array) {
+			System.out.println(i1);
+		}
 	}
+
 	
 }
 
@@ -31,5 +38,6 @@ class Test{
 	public Test(int mark) {
 		System.out.println("构造器" + mark);
 	}
+		
 }
 
